@@ -20,12 +20,12 @@ color:
 # Footer settings
 footer:
   copyright: masmalsah
-  social: Around the Web
+  social: Profiles
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: linkedin
-    url: http://github.com/jekyll
+    url: https://www.linkedin.com/in/sam-haslam-4440003a
 
 # Build settings
 markdown: kramdown
