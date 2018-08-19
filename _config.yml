@@ -3,7 +3,7 @@ title: Samuel Haslam
 email: samhaslam87@gmail.com
 url: https://masmalsah.github.io
 description: "A web, graphic and multimedia portfolio for freelance digital designer, Samuel Haslam"
-keywords: "Samuel Haslam, UI, user interface deigner, portfolio, advertising, design, graphics, branding, photoshop, graphic design, graphic designer, logo design, web, internet, layout, websites, website design, web design, website designer, flash, flashs, flash animation, flash design, flash animator, flash designer, art, graphic art"
+keywords: "Samuel Haslam, UI, user interface deigner, portfolio, advertising, design, graphics, branding, photoshop, graphic design, graphic designer, logo design, web, internet, layout, websites, website design, web design, website designer, graphic art"
 skills: "User Interface Designer - Graphic Artist - Front End Developer"
 meta_author: Haslam Samuel
 
@@ -12,8 +12,8 @@ google_verify:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
+  primary: 000000 #80B3FF
+  primary-rgb: "145,18,1" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 

@@ -1,15 +1,15 @@
 ---
 layout: default
 imagefolder: /img/portfolio/entmit/
-modal-id: 6
-date: 2014-06-18
+modal-id: 8
+date: 2018-01-01
 img: entmit.png
-img1: entmit1.jpg
-alt: image-alt
+img1: 
+alt: 
 link: 
 project-date: 2015
 client: 
 category: UI Design
-description: Site UI Redesign
+description: Responsible for site UI Design.
 
 ---

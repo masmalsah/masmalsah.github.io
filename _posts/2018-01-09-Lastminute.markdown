@@ -1,15 +1,15 @@
 ---
 layout: default
 imagefolder: /img/portfolio/lastmin/
-modal-id: 8
-date: 2014-06-18
+modal-id: 10
+date: 2018-01-01
 img: lastmin.png
-img1: lastmin1.jpg
-alt: image-alt
+img1: 
+alt: 
 link: 
 project-date: 2013
 client: 
-category: UI Design
+category: Campaign Site Design, Email Design
 description: UI Design for microsite and email campaign
 
 ---

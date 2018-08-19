@@ -111,7 +111,7 @@ DEPENDENCIES
   bundler (~> 1.12)
   freelancer-theme-jekyll!
   rake (~> 10.0)
-  wdm (>= 0.1.0)
+  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.16.2

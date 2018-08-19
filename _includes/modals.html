@@ -12,11 +12,36 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- <h3>{{ post.title }}</h3> -->
-                            <!-- <hr class="star-primary"> -->
-                            <img src="img/portfolio/{{ post.img1 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-
                             <h3>{{ post.title }}</h3>
+                            {% if post.description %}
+                                <p><small>{{ post.description }}</small></p>
+                            {% endif %}
+
+                            <ul class="list-inline item-details">
+                                {% if post.client %}
+                                    <li>View:
+                                        <strong><a href="{{ post.link }}" target="_blank">{{ post.client }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if post.project-date %}
+                                    <li>Date:
+                                        <strong>{{ post.project-date }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if post.category %}
+                                    <li>Service:
+                                        <strong>{{ post.category }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                            {% if post.img1 %}
+                            <img src="img/portfolio/{{ post.img1 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% endif %}
+
+                            <!-- <h3>{{ post.title }}</h3>
                             {% if post.description %}
                                 <p>{{ post.description }}</p>
                             {% endif %}
@@ -41,7 +66,7 @@
                                     </li>
                                 {% endif %}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br><br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br><br> -->
                             {% if post.imagefolder %}
                                 {% capture ipath %}{{ post.imagefolder }}{% endcapture %}
                                 {% for image in site.static_files %}
@@ -50,7 +75,7 @@
                                   {% endif %}
                                 {% endfor %}
                             {% endif %}
-                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br><br>
                         </div>
                     </div>
                 </div>

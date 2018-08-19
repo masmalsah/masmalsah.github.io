@@ -1,15 +1,15 @@
 ---
 layout: default
 imagefolder: 
-modal-id: 5
-date: 2014-07-18
+modal-id: 7
+date: 2018-01-01
 img: mit.png
 img1: mit1.jpg
-alt: image-alt
+alt: mit
 link: https://www.manukau.ac.nz/
 project-date: 2014
 client: launch site
 category: UI Design
-description: Site UI Redesign
+description: During my time at MIT I was responsible for updating the site design to fit the rebrand.
 
 ---
