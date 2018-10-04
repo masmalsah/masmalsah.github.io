@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|posts)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.add_runtime_dependency 'jekyll', '~> 3.6'
+  spec.add_runtime_dependency 'jekyll', '~> 3.8'
   spec.add_runtime_dependency 'jekyll-data', '~> 1.0'
   spec.add_runtime_dependency 'jekyll-feed', '~> 0.9.2'
   spec.add_runtime_dependency 'jekyll-gist', '~> 1.4'
