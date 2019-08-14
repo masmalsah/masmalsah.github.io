@@ -6,9 +6,9 @@ date: 2018-01-01
 img: r1VipM.jpg
 img1: 
 alt: 
-link: https://vip.regimenone.com/gb/try-perfect-skincare-ukm/landing/
+<!-- link: https://vip.regimenone.com/gb/try-perfect-skincare-ukm/landing/ -->
 project-date: Apr 2019
-client: launch site
+<!-- client: launch site -->
 category: UI Design, HTML, CSS, Bootstrap
 description: Front end UI design and build 
 
