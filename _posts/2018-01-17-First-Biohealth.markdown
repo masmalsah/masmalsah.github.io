@@ -9,7 +9,7 @@ alt:
 link: 
 project-date: June 2018
 <!-- client: launch site -->
-category: UI Design, HTML, CSS, Bootstrap
+category: UI/UX, HTML, CSS, Bootstrap
 description: Front end UI design, graphics creation inline with existing branding for dietary supplements ecommerce store. Edited existing site bootstrap html/css template elements to fit design.
 
 ---

@@ -9,7 +9,7 @@ alt:
 <!-- link: https://vip.regimenone.com/gb/try-perfect-skincare-ukm/landing/ -->
 project-date: Apr 2019
 <!-- client: launch site -->
-category: UI Design, HTML, CSS, Bootstrap
+category: UI/UX, HTML, CSS, Bootstrap
 description: Front end UI design and build 
 
 ---

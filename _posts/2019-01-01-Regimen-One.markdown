@@ -9,7 +9,7 @@ alt:
 <!-- link: https://www.regimenone.com/en/ -->
 project-date: Feb 2019
 <!-- client: launch site -->
-category: UI Design, HTML, CSS, Bootstrap
+category: UI/UX, HTML, CSS, Bootstrap
 description: Front end UI design, branding and asset creation. Edited existing site bootstrap html/css template elements to fit design.
 
 ---
