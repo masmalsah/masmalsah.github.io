@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.authors                 = ['Sam Haslam']
 
   spec.summary                 = 'Samuel Haslam Portfolio.'
-  spec.homepage                = 'https://masmahsah.github.io'
+  spec.homepage                = 'https://samhaslam.design'
   spec.licenses                = ['MIT']
 
   spec.metadata['plugin_type'] = 'theme'

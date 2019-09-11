@@ -415,6 +415,7 @@ footer .footer-below {
     height: 55px;
     background-color: transparent;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .portfolio-modal .close-modal:hover {
