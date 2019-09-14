@@ -1,21 +1,19 @@
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row grid">
-                {% for post in site.posts %}
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                    <p><small>{{ post.category }}</small></p>
-                                </div>
-                            </div>
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                        </a>
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-sm-6 col-lg-4 portfolio-item">
+                <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                            <p><small>{{ post.category }}</small></p>
+                        </div>
                     </div>
-                {% endfor %}
+                    <img src="assets/img/portfolio/{{ post.img }}" class="img-fluid" alt="{{ post.alt }}">
+                </a>
             </div>
+            {% endfor %}
         </div>
-    </section>
+    </div>
+</section>

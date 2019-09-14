@@ -2,15 +2,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}" />
     {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-    <link rel="stylesheet" href="{{ "/style.css" }}">
-    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" }}">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2bd23cc3b8.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147663976-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

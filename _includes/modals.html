@@ -1,6 +1,6 @@
- <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+{% for post in site.posts %}
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -8,78 +8,50 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="modal-body">
                             <h3>{{ post.title }}</h3>
                             {% if post.description %}
-                                <p><small>{{ post.description }}</small></p>
+                            <p><small>{{ post.description }}</small></p>
                             {% endif %}
-
-                            <ul class="list-inline item-details">
+                            <ul class="d-flex list-inline item-details justify-content-center">
                                 {% if post.client %}
-                                    <li>View:
-                                        <strong><a href="{{ post.link }}" target="_blank">{{ post.client }}</a>
-                                        </strong>
-                                    </li>
+                                <li class="list-inline-item">View:
+                                    <strong><a href="{{ post.link }}" target="_blank">{{ post.client }}</a>
+                                    </strong>
+                                </li>
                                 {% endif %}
                                 {% if post.project-date %}
-                                    <li>Date:
-                                        <strong>{{ post.project-date }}</a>
-                                        </strong>
-                                    </li>
+                                <li class="list-inline-item">Date:
+                                    <strong>{{ post.project-date }}</a>
+                                    </strong>
+                                </li>
                                 {% endif %}
                                 {% if post.category %}
-                                    <li>Service:
-                                        <strong>{{ post.category }}</a>
-                                        </strong>
-                                    </li>
+                                <li class="list-inline-item">Service:
+                                    <strong>{{ post.category }}</a>
+                                    </strong>
+                                </li>
                                 {% endif %}
                             </ul>
                             {% if post.img1 %}
-                            <img src="img/portfolio/{{ post.img1 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <img src="assets/img/portfolio/{{ post.img1 }}" class="img-fluid img-centered" alt="{{ post.alt }}">
                             {% endif %}
-
-                            <!-- <h3>{{ post.title }}</h3>
-                            {% if post.description %}
-                                <p>{{ post.description }}</p>
-                            {% endif %}
-
-                            <ul class="list-inline item-details">
-                                {% if post.client %}
-                                    <li>View:
-                                        <strong><a href="{{ post.link }}" target="_blank">{{ post.client }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.project-date %}
-                                    <li>Date:
-                                        <strong>{{ post.project-date }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.category %}
-                                    <li>Service:
-                                        <strong>{{ post.category }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br><br> -->
                             {% if post.imagefolder %}
-                                {% capture ipath %}{{ post.imagefolder }}{% endcapture %}
-                                {% for image in site.static_files %}
-                                  {% if image.path contains ipath  %}
-                                    <img src="{{ site.baseurl }}{{ image.path }}" class="img-responsive img-centered">
-                                  {% endif %}
-                                {% endfor %}
+                            {% capture ipath %}{{ post.imagefolder }}{% endcapture %}
+                            {% for image in site.static_files %}
+                            {% if image.path contains ipath %}
+                            <img src="{{ site.baseurl }}{{ image.path }}" class="img-fluid img-centered">
                             {% endif %}
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br><br>
+                            {% endfor %}
+                            {% endif %}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endfor %}
