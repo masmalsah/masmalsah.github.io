@@ -43,7 +43,7 @@
                             {% capture ipath %}{{ post.imagefolder }}{% endcapture %}
                             {% for image in site.static_files %}
                             {% if image.path contains ipath %}
-                            <img src="{{ site.baseurl }}{{ image.path }}" class="img-fluid img-centered">
+                            <div><img src="{{ site.baseurl }}{{ image.path }}" class="img-fluid img-centered"></div>
                             {% endif %}
                             {% endfor %}
                             {% endif %}
