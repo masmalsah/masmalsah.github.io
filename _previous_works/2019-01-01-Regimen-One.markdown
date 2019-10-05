@@ -10,6 +10,6 @@ alt:
 project-date: Feb 2019
 <!-- client: launch site -->
 category: UI/UX, HTML, CSS, Bootstrap
-description: Front end UI design, branding and asset creation. Edited existing site bootstrap html/css template elements to fit design.
+description: Front end UI design, branding and asset creation.
 
 ---

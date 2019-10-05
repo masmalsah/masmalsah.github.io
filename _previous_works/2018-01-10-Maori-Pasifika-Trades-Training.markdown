@@ -1,6 +1,6 @@
 ---
 layout: default
-imagefolder: /img/portfolio/mptt/
+imagefolder: assets/img/portfolio/mptt/
 modal-id: 11
 date: 2018-01-01
 img: mptti.png

@@ -1,6 +1,6 @@
 ---
 layout: default
-imagefolder: /img/portfolio/bter11/
+imagefolder: assets/img/portfolio/bter11/
 modal-id: 6
 date: 2018-01-01
 img: bter11.jpg

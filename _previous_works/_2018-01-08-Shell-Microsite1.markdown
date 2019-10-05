@@ -1,11 +1,11 @@
 ---
 layout: default
-imagefolder: /img/portfolio/shell2/
-modal-id: 14
+imagefolder: assets/img/portfolio/shell1/
+modal-id: 13
 date: 2018-01-01
-img: shell-mosaic-thumb.png
-img1: moasic1.jpg
-alt: image-alt
+img: firefly.png
+img1: firefly1.jpg
+alt: 
 link: 
 project-date: 2013
 client: 

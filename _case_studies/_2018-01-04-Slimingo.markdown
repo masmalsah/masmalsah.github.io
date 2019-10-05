@@ -1,0 +1,57 @@
+---
+layout: default
+order: 4 
+imagefolder: 
+modal-id: 1
+date: 2018-01-01
+img: slimingo.jpg
+bgheadimg: 
+headoverlaycolor: 
+headoverlayopacity: 
+img1:
+alt: 
+link: 
+project-date: 
+client: 
+category: UX/UI research & design, HTML/CSS build
+description: Design system development and eCommerce site design 
+
+---
+
+<div class="row  justify-content-center mt-4">
+	<div class="col-12 mb-3"><h4>Process Overview</h4></div>
+	<div class="col-sm-10 col-xl-7 mt-3 mb-5">
+		<ul class="progress-indicator d-flex">
+            <li>
+                <span class="bubble"></span>
+                Understand & Research
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Design system development
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Prototyping
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Implementation
+            </li>
+        </ul>
+	</div>
+	<div class="col-12">
+		<h4>Understand & Research</h4>
+		<p>looked at examples in the market</p>
+		<p><small>competitor pros cons</small></p>
+		<p>did contextual interviews with users on competitor sites to see what they liked didn't like</p>
+		<h4>Design system development</h4>
+		<p>Began putting the building blocks of the design system together</p>
+		<p><small>colors, typography, icons, etc</small></p>
+		<h4>Prototyping</h4>
+		<p>Created design testing homepage design. tone of voice colors etc.</p>
+		<p><small>interview results</small></p>
+		<h4>Implementation</h4>
+		<p>Built HTML/CSS front end</p>
+	</div>
+</div>

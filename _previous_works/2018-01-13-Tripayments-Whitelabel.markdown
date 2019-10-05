@@ -1,6 +1,6 @@
 ---
 layout: default
-imagefolder: /img/portfolio/triwl/
+imagefolder: assets/img/portfolio/triwl/
 modal-id: 8
 date: 2018-01-01
 img: triwl.jpg

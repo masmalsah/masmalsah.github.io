@@ -1,0 +1,23 @@
+<!-- Portfolio Grid Section -->
+    <section id="previouswork" class="bg-light mb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center"><h3 class="mx-0 mt-0 mb-5">Previous Works</h3>  </div>
+                {% assign previous_works_order = site.previous_works | reverse %}
+                {% for previous_work in previous_works_order %}
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal-{{ previous_work.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>{{ previous_work.title }}</p>
+                                <p><small>{{ previous_work.category }}</small></p>
+                            </div>
+                        </div>
+                        <img src="assets/img/portfolio/{{ previous_work.img }}" class="img-fluid" alt="{{ previous_work.alt }}">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

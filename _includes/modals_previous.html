@@ -1,0 +1,64 @@
+ <!-- Portfolio Modals -->
+ {% for previous_work in site.previous_works %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ previous_work.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="modal-body">
+                                <h2>{{ previous_work.title }}</h2>
+                                <div class="row justify-content-center mt-3">
+                                        <div class="col-md-7">
+                                        {% if previous_work.description %}
+                                            <p>{{ previous_work.description }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <ul class="d-flex list-inline item-details justify-content-center">
+                                    {% if previous_work.client %}
+                                        <li class="list-inline-item">View:
+                                            <strong><a href="{{ previous_work.link }}" target="_blank">{{ previous_work.client }}</a>
+                                            </strong>
+                                        </li>
+                                    {% endif %}
+                                    {% if previous_work.project-date %}
+                                        <li class="list-inline-item">Date:
+                                            <strong>{{ previous_work.project-date }}</a>
+                                            </strong>
+                                        </li>
+                                    {% endif %}
+                                    {% if previous_work.category %}
+                                        <li class="list-inline-item">Service:
+                                            <strong>{{ previous_work.category }}</a>
+                                            </strong>
+                                        </li>
+                                    {% endif %}
+                                </ul>
+                                {% if previous_work.img1 %}
+                                <img src="assets/img/portfolio/{{ previous_work.img1 }}" class="img-fluid img-centered" alt="{{ previous_work.alt }}">
+                                {% endif %}
+                                {% if previous_work.imagefolder %}
+                                    {% capture ipath %}{{ previous_work.imagefolder }}{% endcapture %}
+                                    {% for image in site.static_files %}
+                                      {% if image.path contains ipath  %}
+                                        <div><img src="{{ site.baseurl }}{{ image.path }}" class="img-fluid img-centered"></div>
+                                      {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

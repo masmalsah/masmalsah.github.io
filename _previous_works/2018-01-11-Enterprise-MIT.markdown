@@ -1,6 +1,6 @@
 ---
 layout: default
-imagefolder: /img/portfolio/entmit/
+imagefolder: assets/img/portfolio/entmit/
 modal-id: 10
 date: 2018-01-01
 img: entmit.png

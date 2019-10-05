@@ -10,6 +10,10 @@ meta_author: Haslam Samuel
 # Google webmaster tools
 google_verify:
 
+collections:
+  case_studies:
+  previous_works:
+
 sass:
   style: compressed
   sass_dir: _sass

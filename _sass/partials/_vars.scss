@@ -2,22 +2,24 @@
 // Color system
 
 $brand-primary:#2c3e50;
-$brand-secondary:#2c3e50;
+$brand-secondary:#ffc340;
+$brand-blue:#1fb4cc;
 
-$white:    #fff !default;
 
-$font-primary:'Montserrat', sans-serif;
-$font-family-base:'Lato', sans-serif;
+
+$font-primary:'Karla', sans-serif;
+$font-family-base:'Montserrat', sans-serif;
 
 $theme-colors: (
-    "dark": $brand-secondary,
-
+  "brand-blue": $brand-blue
 );
-$navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
-$navbar-dark-active-color:          $white !default;
-$navbar-dark-disabled-color:        rgba($white, .25) !default;
 
-$navbar-dark-toggler-border-color:  rgba($white, 0) !default;
+
+// $navbar-light-color:                 $brand-primary !default;
+// $navbar-light-hover-color:           rgba($brand-primary, .75) !default;
+// $navbar-light-active-color:          $brand-secondary !default;
+// $navbar-light-disabled-color:        rgba($brand-primary, .25) !default;
+
+// $navbar-light-toggler-border-color:  rgba($brand-primary, 0) !default;
 
 // $modal-xl:                          95% !default;

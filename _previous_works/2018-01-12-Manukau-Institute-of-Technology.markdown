@@ -1,6 +1,6 @@
 ---
 layout: default
-imagefolder: /img/portfolio/mit/
+imagefolder: assets/img/portfolio/mit/
 modal-id: 9
 date: 2018-01-01
 img: mit.png

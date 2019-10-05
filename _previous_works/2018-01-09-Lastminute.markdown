@@ -1,6 +1,6 @@
 ---
 layout: default
-imagefolder: /img/portfolio/lastmin/
+imagefolder: assets/img/portfolio/lastmin/
 modal-id: 12
 date: 2018-01-01
 img: lastmin.png
