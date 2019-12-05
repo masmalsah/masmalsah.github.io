@@ -50,7 +50,7 @@ description: Optimized product upsell and checkout flows for in-house Ecommerce 
     <div class="col-lg-10 p-4"><img src="assets/img/portfolio/prime-campain-ux-flow.jpg" alt="" class="img-fluid"></div>
     <div class="col-sm-10 col-lg-8 mt-4">
 		<p>Using emails captured during existing campaign flows where users had abanoded the checkout process I wanted to get feedback from people who had  a) not proceeded with entering any billing data, b) people who had entered billing data but had not opted with any of the upsell options and c) from both desktop and mobile camapigns</p>
-		<p class="mb-4">By offering a further discount I was able to get 2 people who had abandoned the checkout process in its entirity in both scenarios in both the mobile and desktop. I conducted the interviews via various channels (skype, zoom, hangouts) and using a mockup of the campaigns in inVision to give context to the interview</p>
+		<p class="mb-4">By offering a further discount I was able to get customers who had abandoned the checkout process in its entirity in both scenarios from either the mobile and desktop flows. I conducted the interviews via various channels (skype, zoom, hangouts) and using a mockup of the campaigns in inVision to give context to the interview</p>
 	</div>
     <div class="row">
         <div class="col-sm-6">
