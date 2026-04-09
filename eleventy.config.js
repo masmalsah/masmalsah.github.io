@@ -76,9 +76,12 @@ export default function (eleventyConfig) {
     const items = enrichFolderImages(
       collectionApi.getFilteredByGlob("src/previous-works/*.md"),
     );
-    return items.sort(
-      (a, b) => new Date(b.data.date) - new Date(a.data.date),
-    );
+    return items.sort((a, b) => {
+      const oa = a.data.order ?? 999;
+      const ob = b.data.order ?? 999;
+      if (oa !== ob) return oa - ob;
+      return new Date(b.data.date) - new Date(a.data.date);
+    });
   });
 
   return {
