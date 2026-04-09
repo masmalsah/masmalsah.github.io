@@ -1,0 +1,26 @@
+<section id="casestudies" class="tw:mx-auto tw:max-w-7xl tw:px-4 tw:pb-16 md:tw:px-6 md:tw:pb-24">
+  <div class="portfolio-grid">
+    {% for caseStudy in collections.caseStudies %}
+    {% set ctaHref = caseStudy.data.link if caseStudy.data.link else caseStudy.url %}
+    {% set ctaExternal = caseStudy.data.link %}
+    <article class="tw:flex tw:flex-col">
+      <a href="{{ ctaHref }}" class="tw:block tw:overflow-hidden tw:rounded-2xl tw:border tw:border-neutral-200 tw:bg-neutral-50"{% if ctaExternal %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        {% if caseStudy.data.img %}
+        <img src="/assets/img/portfolio/{{ caseStudy.data.img }}" class="tw:aspect-[4/3] tw:w-full tw:object-cover tw:transition hover:tw:scale-[1.01]" alt="{{ caseStudy.data.alt or caseStudy.data.title }}">
+        {% endif %}
+      </a>
+      <h3 class="tw:mt-5 tw:font-sans tw:text-[18px] tw:font-bold tw:leading-snug tw:tracking-[-0.02em] tw:text-black md:tw:text-[20px]">
+        <a href="{{ ctaHref }}" class="tw:transition hover:tw:opacity-70"{% if ctaExternal %} target="_blank" rel="noopener noreferrer"{% endif %}>
+          {{- caseStudy.data.title -}}
+          {%- if caseStudy.data['project-date'] %} {{ caseStudy.data['project-date'] }}{% endif -%}
+          {%- if caseStudy.data.category %} {{ caseStudy.data.category }}{% endif -%}
+        </a>
+      </h3>
+      <p class="tw:mt-3 tw:text-[14px] tw:font-normal tw:leading-relaxed tw:text-black">{{ caseStudy.data.description }}</p>
+      <a href="{{ ctaHref }}" class="tw:mt-4 tw:inline-flex tw:items-center tw:gap-1 tw:self-start tw:text-[14px] tw:font-normal tw:text-black tw:transition hover:tw:opacity-70"{% if ctaExternal %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        {% if ctaExternal %}Case study (external){% else %}Case study{% endif %}<span aria-hidden="true">→</span>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
