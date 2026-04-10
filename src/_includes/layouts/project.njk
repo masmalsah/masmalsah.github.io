@@ -5,43 +5,56 @@ layout: base.njk
 {% include "partials/nav.njk" %}
 <main class="tw:pb-20">
   <article class="tw:mx-auto tw:max-w-7xl tw:px-4 md:tw:px-6">
-    <a class="tw:inline-flex tw:items-center tw:gap-1 tw:text-[12px] tw:font-normal tw:text-black tw:transition hover:tw:opacity-70" href="/"><span aria-hidden="true">←</span>Back to home</a>
+    <div class="project-article">
+      <a class="tw:inline-flex tw:items-center tw:gap-1 tw:text-[12px] tw:font-normal tw:text-black tw:transition hover:tw:opacity-70" href="/"><span aria-hidden="true">←</span>Back to home</a>
 
-    <header class="tw:mt-6 tw:border-b tw:border-neutral-200 tw:pb-8">
-      <p class="tw:text-[14px] tw:font-normal tw:uppercase tw:tracking-[0.12em] tw:text-black">{{ projectType }}</p>
-      <h1 class="tw:mt-3 tw:font-sans tw:text-[1.75rem] tw:font-bold tw:tracking-[-0.02em] tw:text-black md:tw:text-[2rem]">{{ title }}</h1>
-      {% if description %}
-      <p class="tw:mt-4 tw:max-w-4xl tw:text-[14px] tw:font-normal tw:leading-relaxed tw:text-black">{{ description }}</p>
-      {% endif %}
-      <div class="tw:mt-5 tw:flex tw:flex-wrap tw:gap-x-4 tw:gap-y-1 tw:text-[14px] tw:font-normal tw:uppercase tw:tracking-[0.1em] tw:text-black">
-        {% if category %}<span>{{ category }}</span>{% endif %}
-        {% if client %}<span>{{ client }}</span>{% endif %}
-        {% if projectDate %}<span>{{ projectDate }}</span>{% endif %}
-      </div>
-    </header>
+      <header class="project-page-header">
+        {% if projectType %}
+        <p class="project-page-kicker">{{ projectType }}</p>
+        {% endif %}
+        <h1 class="project-page-h1">{{ title }}</h1>
+        {% if description %}
+        <p class="project-page-lede">{{ description }}</p>
+        {% endif %}
+        {% if category or client or projectDate %}
+        <div class="project-page-meta">
+          {% if category %}<span>{{ category }}</span>{% endif %}
+          {% if client %}<span>{{ client }}</span>{% endif %}
+          {% if projectDate %}<span>{{ projectDate }}</span>{% endif %}
+        </div>
+        {% endif %}
+      </header>
 
-    {% if img %}
-    <figure class="tw:mt-8 tw:overflow-hidden tw:rounded-md tw:border tw:border-neutral-200">
-      <img src="/assets/img/portfolio/{{ img }}" class="tw:w-full tw:object-cover" alt="{{ alt or title }}">
-    </figure>
-    {% endif %}
-
-    {% if img1 %}
-    <figure class="tw:mt-8 tw:overflow-hidden tw:rounded-md tw:border tw:border-neutral-200">
-      <img src="/assets/img/portfolio/{{ img1 }}" class="tw:w-full tw:object-cover" alt="{{ alt or title }}">
-    </figure>
-    {% endif %}
-
-    {% if folderImages and (folderImages | length) %}
-      {% for src in folderImages %}
-      <figure class="tw:mt-8 tw:overflow-hidden tw:rounded-md tw:border tw:border-neutral-200">
-        <img src="{{ src }}" class="tw:w-full tw:object-cover" alt="{{ title }}">
+      {% if img %}
+      <figure class="project-article-figure">
+        <img src="/assets/img/portfolio/{{ img }}" alt="{{ alt or title }}">
       </figure>
-      {% endfor %}
-    {% endif %}
+      {% endif %}
 
-    <section class="project-content tw:mt-10 tw:max-w-none tw:text-black">
-      {{ content | safe }}
-    </section>
+      {% if img1 %}
+      <figure class="project-article-figure">
+        <img src="/assets/img/portfolio/{{ img1 }}" alt="{{ alt or title }}">
+      </figure>
+      {% endif %}
+
+      {% if folderImages and (folderImages | length) %}
+        {% for src in folderImages %}
+        <figure class="project-article-figure">
+          <img src="{{ src }}" alt="{{ title }}">
+        </figure>
+        {% endfor %}
+      {% endif %}
+
+      <section class="project-content">
+        {{ content | safe }}
+      </section>
+
+      <div class="project-article-cta" role="navigation" aria-label="Article actions">
+        {% if link %}
+        <a class="project-article-button" href="{{ link }}" target="_blank" rel="noopener noreferrer">View project</a>
+        {% endif %}
+        <a class="project-article-button" href="/">Back to portfolio</a>
+      </div>
+    </div>
   </article>
 </main>

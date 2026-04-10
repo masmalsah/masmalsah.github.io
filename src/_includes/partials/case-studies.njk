@@ -5,9 +5,7 @@
     {% set ctaExternal = caseStudy.data.link %}
     <article class="tw:flex tw:flex-col">
       <a href="{{ ctaHref }}" class="tw:block tw:overflow-hidden tw:rounded-2xl tw:border tw:border-neutral-200 tw:bg-neutral-50"{% if ctaExternal %} target="_blank" rel="noopener noreferrer"{% endif %}>
-        {% if caseStudy.data.img %}
-        <img src="/assets/img/portfolio/{{ caseStudy.data.img }}" class="tw:aspect-[4/3] tw:w-full tw:object-cover tw:transition hover:tw:scale-[1.01]" alt="{{ caseStudy.data.alt or caseStudy.data.title }}">
-        {% endif %}
+        <div class="case-study-thumb-placeholder" aria-hidden="true"></div>
       </a>
       <h3 class="tw:mt-5 tw:font-sans tw:text-[18px] tw:font-bold tw:leading-snug tw:tracking-[-0.02em] tw:text-black md:tw:text-[20px]">
         <a href="{{ ctaHref }}" class="tw:transition hover:tw:opacity-70"{% if ctaExternal %} target="_blank" rel="noopener noreferrer"{% endif %}>

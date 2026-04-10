@@ -41,7 +41,8 @@ function enrichFolderImages(items) {
 export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("buildYear", new Date().getFullYear());
 
-  eleventyConfig.addPassthroughCopy(path.join(__dirname, "assets"));
+  // Relative path required: absolute paths break implied output mapping (assets → _site/assets).
+  eleventyConfig.addPassthroughCopy("assets");
 
   eleventyConfig.addTransform("fixAssetPaths", function (content, outputPath) {
     if (!outputPath || !outputPath.endsWith(".html")) return content;
@@ -58,6 +59,13 @@ export default function (eleventyConfig) {
       `npx postcss "${path.join(__dirname, "src/styles/input.css")}" -o "${path.join(__dirname, "_site/assets/css/styles.css")}"`,
       { stdio: "inherit" },
     );
+    const siteDir = path.join(__dirname, "_site");
+    for (const name of ["favicon.ico", "favicon.svg"]) {
+      fs.copyFileSync(
+        path.join(__dirname, "assets/img", name),
+        path.join(siteDir, name),
+      );
+    }
   });
 
   eleventyConfig.addCollection("caseStudies", (collectionApi) => {
