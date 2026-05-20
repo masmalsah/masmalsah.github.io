@@ -353,10 +353,28 @@
   .project-content ol {
     margin-top: 1.25rem;
     margin-bottom: 0;
-    padding-left: 1.35rem;
+    padding-left: 1.5rem;
+    list-style-position: outside;
     font-size: 1rem;
     line-height: 1.65;
     color: #000000;
+  }
+
+  /* Tailwind base layer resets ul/ol to list-style: none — restore markers in article body */
+  .project-content ul {
+    list-style-type: disc;
+  }
+
+  .project-content ol {
+    list-style-type: decimal;
+  }
+
+  .project-content ul ul {
+    list-style-type: circle;
+  }
+
+  .project-content ol ol {
+    list-style-type: lower-alpha;
   }
 
   .project-content li {
@@ -501,6 +519,16 @@
     margin: 0;
   }
 
+  .project-content .project-image-grid figure img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .project-content .project-image-grid--1-1 figure img {
+    aspect-ratio: 1 / 1;
+  }
+
   .project-comparison-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -510,6 +538,34 @@
 
   .project-comparison-grid figure {
     margin: 0;
+  }
+
+  .project-stats-connected {
+    display: grid;
+    grid-template-columns: 1fr minmax(2rem, 3rem) 1fr minmax(2rem, 3rem) 1fr;
+    gap: 0.75rem;
+    align-items: stretch;
+    margin-top: 1.25rem;
+  }
+
+  .project-stat-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  .project-stat-link svg {
+    display: block;
+    width: 100%;
+    max-width: 3rem;
+    height: 1.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project-stat-link .stat-link-pulse {
+      display: none;
+    }
   }
 
   .project-stats-grid {
@@ -530,7 +586,7 @@
     display: block;
     font-family: var(--tw-font-sans);
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.15;
     margin-bottom: 0.25rem;
     letter-spacing: -0.02em;
@@ -596,6 +652,18 @@
     .project-comparison-grid,
     .project-stats-grid {
       grid-template-columns: 1fr;
+    }
+
+    .project-stats-connected {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .project-stat-link svg {
+      transform: rotate(90deg);
+      width: 1.5rem;
+      height: 2.5rem;
+      margin: 0.25rem auto;
     }
   }
 
