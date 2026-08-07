@@ -2,18 +2,17 @@
 title: Designing and Building Internal Ecommerce Tools
 order: 3
 date: 2025-01-01
-img: platform.jpg
+img: platform.webp
+home-img: platform.webp
 project-start: 2021
 description: Improving the usability and scalability of an ecommerce CRM platform—spanning storefront management, campaigns, payments, and analytics.
 ---
 
-<p class="lead">Designing and building a scalable UI system for an ecommerce platform used to manage products, campaigns, and customer operations.</p>
+<p class="lead">Designing and building a scalable UI system for the ecommerce platform teams use to manage products, campaigns, and customer operations.</p>
 
 <p>Alongside customer-facing storefronts and campaign funnels, I worked on the frontend and UX of the NextCommerce platform itself—an ecommerce CRM used by marketers and operators to manage the full lifecycle of a brand.</p>
 
-<p>The platform spans a wide range of functionality, from storefront configuration and inventory management to payments, analytics, and campaign operations.</p>
-
-<p>This created a core challenge: <strong>how to make complex ecommerce systems usable, consistent, and scalable</strong> without limiting flexibility.</p>
+<p>The platform spans storefront configuration, inventory, payments, analytics, and campaign operations. The core challenge was making that complexity <strong>usable, consistent, and scalable</strong> without limiting flexibility.</p>
 
 <hr>
 
@@ -30,16 +29,14 @@ description: Improving the usability and scalability of an ecommerce CRM platfor
 </ul>
 
 <aside class="callout">
-  <p><strong>Challenge:</strong> Each of these areas has its own complexity—but users expect a unified and intuitive interface.</p>
+  <p><strong>Challenge:</strong> Each area has its own complexity—but users expect a unified, intuitive interface.</p>
 </aside>
 
 <hr>
 
-<h2>Improving Usability & Onboarding</h2>
+<h2>Improving Usability &amp; Onboarding</h2>
 
-<p>A key focus of my work was improving how users understand and navigate the platform—particularly for onboarding new merchants and teams.</p>
-
-<p>This included:</p>
+<p>A key focus was how users understand and navigate the platform—especially when onboarding new merchants and teams.</p>
 
 <ul>
   <li>Simplifying workflows for common tasks (product setup, campaign creation)</li>
@@ -49,36 +46,63 @@ description: Improving the usability and scalability of an ecommerce CRM platfor
 </ul>
 
 <blockquote>
-  <p>Good UX in this context isn’t about visual polish—it’s about reducing friction in complex workflows.</p>
+  <p>Good UX here isn’t about visual polish—it’s about reducing friction in complex workflows.</p>
 </blockquote>
 
 <hr>
 
-<h2>Universal Design System</h2>
+<h2>App UI Framework</h2>
 
-<p>To support consistency and scalability, I contributed to the development of a <strong>universal UI system</strong> used across the platform.</p>
+<p>To support consistency at scale, I contributed to the <strong><a href="https://app-ui.nextcommerce.com/">Next Commerce Design System (App UI)</a></strong>—the frontend framework for apps that integrate with the NEXT platform.</p>
 
-<p>Built on top of Bootstrap, this system provides a shared foundation for layout, components, and interaction patterns.</p>
+<figure>
+  <img src="/assets/img/portfolio/platform-appui.webp" alt="App UI design system collage showing forms, KPI cards, alerts, and chart components">
+  <figcaption>App UI building blocks—forms, KPIs, alerts, and chart patterns documented for reuse across platform surfaces.</figcaption>
+</figure>
+
+<p>Built on Bootstrap and distributed via CDN, App UI provides a shared foundation for layout, components, and interaction patterns used across internal tools:</p>
 
 <ul>
-  <li>Standardised UI components (forms, tables, modals, navigation)</li>
+  <li>Cards, tables, forms, navigation, and feedback components</li>
   <li>Consistent spacing, typography, and visual hierarchy</li>
-  <li>Reusable patterns for data-heavy interfaces</li>
-  <li>Alignment between platform UI and frontend outputs</li>
+  <li>Reusable patterns for data-heavy interfaces (filters, KPIs, charts)</li>
+  <li>Documented markup examples teams can adopt without reinventing UI</li>
 </ul>
 
-<div class="project-stats-grid">
+<div class="project-stats-connected">
   <div class="project-stat">
     <strong>Consistency</strong>
-    <span>Shared UI patterns across all platform surfaces</span>
+    <span>Shared UI patterns across platform surfaces</span>
+  </div>
+  <div class="project-stat-link" aria-hidden="true">
+    <svg viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path id="platform-stat-link-0" d="M 4 12 L 36 12" stroke="#ec4899" stroke-width="1.5" stroke-opacity="0.35"></path>
+      <circle class="stat-link-pulse" r="3.5" fill="#ec4899" fill-opacity="0.85">
+        <animateMotion dur="1.1s" repeatCount="indefinite"><mpath href="#platform-stat-link-0"></mpath></animateMotion>
+      </circle>
+      <circle class="stat-link-pulse" r="2" fill="#ec4899" fill-opacity="0.45">
+        <animateMotion dur="1.1s" begin="0.55s" repeatCount="indefinite"><mpath href="#platform-stat-link-0"></mpath></animateMotion>
+      </circle>
+    </svg>
   </div>
   <div class="project-stat">
     <strong>Usability</strong>
-    <span>Improved onboarding and task completion</span>
+    <span>Clearer onboarding and faster task completion</span>
+  </div>
+  <div class="project-stat-link" aria-hidden="true">
+    <svg viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path id="platform-stat-link-1" d="M 4 12 L 36 12" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.35"></path>
+      <circle class="stat-link-pulse" r="3.5" fill="#f97316" fill-opacity="0.85">
+        <animateMotion dur="1.3s" repeatCount="indefinite"><mpath href="#platform-stat-link-1"></mpath></animateMotion>
+      </circle>
+      <circle class="stat-link-pulse" r="2" fill="#f97316" fill-opacity="0.45">
+        <animateMotion dur="1.3s" begin="0.55s" repeatCount="indefinite"><mpath href="#platform-stat-link-1"></mpath></animateMotion>
+      </circle>
+    </svg>
   </div>
   <div class="project-stat">
     <strong>Scalability</strong>
-    <span>System supports ongoing product expansion</span>
+    <span>Component system that grows with the product</span>
   </div>
 </div>
 
@@ -86,50 +110,31 @@ description: Improving the usability and scalability of an ecommerce CRM platfor
 
 <h2>Frontend Implementation</h2>
 
-<p>In addition to UX design, I worked directly on frontend implementation—ensuring that the design system translates cleanly into maintainable, scalable code.</p>
-
-<p>This involved:</p>
+<p>Beyond UX design, I worked on frontend implementation so the design system translated into maintainable code.</p>
 
 <ul>
   <li>Building reusable UI components within the platform</li>
   <li>Refining layout systems for complex data views</li>
-  <li>Ensuring consistency between design intent and implementation</li>
-  <li>Balancing flexibility with maintainable structure</li>
+  <li>Keeping design intent aligned with implementation</li>
+  <li>Balancing flexibility with a maintainable structure</li>
 </ul>
 
-<p>The goal was to create a system that developers can work within efficiently, while maintaining a high level of UI consistency.</p>
+<p>The goal was a system developers can extend efficiently while keeping UI consistency high.</p>
 
 <hr>
-
-<h2>Image grid</h2>
 
 <div class="project-image-grid project-image-grid--3">
   <figure>
-    <img src="/assets/img/portfolio/nextcommerce/platform-dashboard.jpg" alt="Dashboard UI">
-    <figcaption>Platform dashboard with key metrics and controls.</figcaption>
+    <img src="/assets/img/portfolio/nextcommerce/platform-dashboard.webp" alt="Subscription dashboard cards with MRR, new subscribers, revenue growth, and LTV metrics">
+    <figcaption>Operational cards with KPIs, filters, and header actions.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/img/portfolio/nextcommerce/platform-analytics.jpg" alt="Analytics UI">
-    <figcaption>Analytics and reporting interfaces.</figcaption>
+    <img src="/assets/img/portfolio/nextcommerce/platform-analytics.webp" alt="Sales performance chart with net revenue line over sales and returns bars">
+    <figcaption>Chart patterns for analytics and reporting views.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/img/portfolio/nextcommerce/platform-product-management.jpg" alt="Product management UI">
-    <figcaption>Product and inventory management workflows.</figcaption>
-  </figure>
-</div>
-
-<hr>
-
-<h2>Comparison</h2>
-
-<div class="project-comparison-grid">
-  <figure>
-    <div class="case-study-thumb-placeholder" aria-hidden="true"></div>
-    <figcaption>Fragmented UI patterns across features.</figcaption>
-  </figure>
-  <figure>
-    <div class="case-study-thumb-placeholder" aria-hidden="true"></div>
-    <figcaption>Unified design system and consistent UX.</figcaption>
+    <img src="/assets/img/portfolio/nextcommerce/platform-product-management.webp" alt="Analytics data tables for page, device, and browser performance">
+    <figcaption>Data tables for product, order, and inventory workflows.</figcaption>
   </figure>
 </div>
 
@@ -155,27 +160,15 @@ description: Improving the usability and scalability of an ecommerce CRM platfor
     </tr>
     <tr>
       <td>Inconsistent UI</td>
-      <td>Shared component system</td>
+      <td>Shared App UI component system</td>
     </tr>
   </tbody>
 </table>
 
 <hr>
 
-<h2>Example: Component structure</h2>
-
-<pre><code>{% raw %}&lt;!-- Example: reusable form component --&gt;
-&lt;div class="form-group"&gt;
-  &lt;label for="price"&gt;Price&lt;/label&gt;
-  &lt;input type="text" class="form-control" id="price" /&gt;
-&lt;/div&gt;{% endraw %}</code></pre>
-
-<hr>
-
 <h2>Outcome</h2>
 
-<p>This work helped improve the usability and consistency of the platform, making it easier for teams to manage complex ecommerce operations.</p>
+<p>This work improved how teams manage complex ecommerce operations—more consistent UI, clearer workflows, and a shared frontend foundation via App UI.</p>
 
-<p>By aligning design systems with frontend implementation, we created a foundation that supports both current functionality and future growth.</p>
-
-<p>The result is a platform that remains powerful, while becoming increasingly intuitive to use.</p>
+<p>By aligning the design system with implementation, we created a base that supports current platform features and future growth without reinventing patterns for every surface.</p>

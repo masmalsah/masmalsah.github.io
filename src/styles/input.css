@@ -339,6 +339,11 @@
     letter-spacing: -0.015em;
   }
 
+  .project-content .lead,
+  .project-content p.lead {
+    font-weight: 600;
+  }
+
   .project-content > p:first-child,
   .project-content > ul:first-child,
   .project-content > ol:first-child,
