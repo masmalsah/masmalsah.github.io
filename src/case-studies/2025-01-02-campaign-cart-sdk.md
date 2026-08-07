@@ -2,8 +2,9 @@
 title: Building Scalable Ecommerce Funnels with the Campaign Cart SDK
 order: 2
 date: 2025-01-01
-img: campaigns.jpg
-project-date: 2021–2025
+img: campaigns.webp
+home-img: campaigns-masonry.webp
+project-start: 2021
 description: Moving from custom API-driven checkouts to a scalable SDK and template system—reducing complexity, improving reliability, and accelerating campaign development.
 ---
 
@@ -153,15 +154,15 @@ description: Moving from custom API-driven checkouts to a scalable SDK and templ
 
 <div class="project-image-grid project-image-grid--3">
   <figure>
-    <img src="/assets/img/portfolio/nextcommerce/funnel-bundle-selector.jpg" alt="Bundle selector">
+    <img src="/assets/img/portfolio/nextcommerce/funnel-bundle-selector.webp" alt="Multi-package bundle selector with quantity tiers and size variants">
     <figcaption>Bundle selection patterns powered by the SDK.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/img/portfolio/nextcommerce/funnel-upsell.jpg" alt="Upsell step">
+    <img src="/assets/img/portfolio/nextcommerce/funnel-upsell-apollo-mv.webp" alt="Post-purchase upsell offer modal with one-click add to order">
     <figcaption>Structured upsell flows with consistent logic.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/img/portfolio/nextcommerce/funnel-multistep.jpg" alt="Multi-step funnel">
+    <img src="/assets/img/portfolio/nextcommerce/funnel-multistep.webp" alt="Shop three-step checkout with Information, Shipping, and Payment stages">
     <figcaption>Multi-step checkout flows using shared templates.</figcaption>
   </figure>
 </div>

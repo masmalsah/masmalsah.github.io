@@ -2,8 +2,8 @@
 title: Scaling Storefront Experiences at NextCommerce
 order: 1
 date: 2025-01-01
-img: prime.jpg
-project-date: 2020–2025
+img: prime-frontend.jpg
+project-start: 2020
 description: Evolving the storefront themes into a scalable, data-driven system—combining reusable architecture, dynamic rendering, and configurable UI.
 ---
 

@@ -6,8 +6,8 @@
   "scripts": {
     "build": "eleventy",
     "css": "postcss src/styles/input.css -o _site/assets/css/styles.css",
-    "start": "eleventy --serve --watch",
-    "dev": "eleventy --serve --watch"
+    "start": "node scripts/dev.mjs",
+    "dev": "node scripts/dev.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",

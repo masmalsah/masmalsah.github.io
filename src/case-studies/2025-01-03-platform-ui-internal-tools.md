@@ -3,7 +3,7 @@ title: Designing and Building Internal Ecommerce Tools
 order: 3
 date: 2025-01-01
 img: platform.jpg
-project-date: 2021–2025
+project-start: 2021
 description: Improving the usability and scalability of an ecommerce CRM platform—spanning storefront management, campaigns, payments, and analytics.
 ---
 

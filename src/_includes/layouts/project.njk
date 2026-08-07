@@ -16,11 +16,12 @@ layout: base.njk
         {% if description %}
         <p class="project-page-lede">{{ description }}</p>
         {% endif %}
-        {% if category or client or projectDate %}
+        {% if category or client or projectDate or projectStart %}
         <div class="project-page-meta">
           {% if category %}<span>{{ category }}</span>{% endif %}
           {% if client %}<span>{{ client }}</span>{% endif %}
-          {% if projectDate %}<span>{{ projectDate }}</span>{% endif %}
+          {% if projectStart %}<span>{{ projectStart }}–{{ buildYear }}</span>
+          {% elif projectDate %}<span>{{ projectDate }}</span>{% endif %}
         </div>
         {% endif %}
       </header>

@@ -34,6 +34,7 @@ function enrichFolderImages(items) {
     data.folderImages = listFolderImages(data.imagefolder);
     data.title = deriveTitle(item);
     data.projectDate = data["project-date"] || "";
+    data.projectStart = data["project-start"] || data.projectStart || "";
     return item;
   });
 }
