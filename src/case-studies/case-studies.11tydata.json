@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/project.njk",
+  "projectType": "Case study",
+  "permalink": "work/case-studies/{{ page.fileSlug }}/index.html"
+}

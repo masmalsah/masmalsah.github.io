@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/project.njk",
+  "projectType": "Previous work",
+  "permalink": "work/previous-works/{{ page.fileSlug }}/index.html"
+}

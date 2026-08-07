@@ -1,0 +1,61 @@
+---
+layout: base.njk
+---
+
+{% include "partials/nav.njk" %}
+<main class="tw:pb-20">
+  <article class="tw:mx-auto tw:max-w-7xl tw:px-4 md:tw:px-6">
+    <div class="project-article">
+      <a class="tw:inline-flex tw:items-center tw:gap-1 tw:text-[12px] tw:font-normal tw:text-black tw:transition hover:tw:opacity-70" href="/"><span aria-hidden="true">←</span>Back to home</a>
+
+      <header class="project-page-header">
+        {% if projectType %}
+        <p class="project-page-kicker">{{ projectType }}</p>
+        {% endif %}
+        <h1 class="project-page-h1">{{ title }}</h1>
+        {% if description %}
+        <p class="project-page-lede">{{ description }}</p>
+        {% endif %}
+        {% if category or client or projectDate or projectStart %}
+        <div class="project-page-meta">
+          {% if category %}<span>{{ category }}</span>{% endif %}
+          {% if client %}<span>{{ client }}</span>{% endif %}
+          {% if projectStart %}<span>{{ projectStart }}–{{ buildYear }}</span>
+          {% elif projectDate %}<span>{{ projectDate }}</span>{% endif %}
+        </div>
+        {% endif %}
+      </header>
+
+      {% if img %}
+      <figure class="project-article-figure">
+        <img src="/assets/img/portfolio/{{ img }}" alt="{{ alt or title }}">
+      </figure>
+      {% endif %}
+
+      {% if img1 %}
+      <figure class="project-article-figure">
+        <img src="/assets/img/portfolio/{{ img1 }}" alt="{{ alt or title }}">
+      </figure>
+      {% endif %}
+
+      {% if folderImages and (folderImages | length) %}
+        {% for src in folderImages %}
+        <figure class="project-article-figure">
+          <img src="{{ src }}" alt="{{ title }}">
+        </figure>
+        {% endfor %}
+      {% endif %}
+
+      <section class="project-content">
+        {{ content | safe }}
+      </section>
+
+      <div class="project-article-cta" role="navigation" aria-label="Article actions">
+        {% if link %}
+        <a class="project-article-button" href="{{ link }}" target="_blank" rel="noopener noreferrer">View project</a>
+        {% endif %}
+        <a class="project-article-button" href="/">Back to portfolio</a>
+      </div>
+    </div>
+  </article>
+</main>
