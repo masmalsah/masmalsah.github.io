@@ -67,11 +67,7 @@ export default function (eleventyConfig) {
         path.join(siteDir, name),
       );
     }
-    // Custom domain + skip GitHub’s Jekyll post-process on the artifact
-    const cnameSrc = path.join(__dirname, "CNAME");
-    if (fs.existsSync(cnameSrc)) {
-      fs.copyFileSync(cnameSrc, path.join(siteDir, "CNAME"));
-    }
+    // Skip GitHub’s Jekyll post-process on the artifact
     fs.writeFileSync(path.join(siteDir, ".nojekyll"), "");
   });
 
